@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <!-- Seu código de navegação aqui -->
+    </nav>
+    <main>
+        <h1>Faça login para continuar</h1>
+
+        <form id="login-form">
+            <div class="caixa_texto">
+                <p>NOME</p>
+                <input type="text" name="nome" id="nome_login">
+            </div>
+
+            <div class="caixa_texto">
+                <p>SENHA</p>
+                <input type="password" name="senha" id="senha_login">
+            </div>
+
+            <div class="botao">
+                <input type="submit" value="ENTRAR" class="btn">
+            </div>
+        </form>
+
+        <p class="direcionador"><a href="recuperar_senha.html">Esqueceu sua senha?</a></p>
+    </main>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const username = document.getElementById('nome_login').value;
+            const password = document.getElementById('senha_login').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/users');
+                const users = await response.json();
+
+                const user = users.find(user => user.username === username && user.password === password);
+
+                if (user) {
+                    document.getElementById('message').innerText = 'Login successful';
+                    window.location.href = 'cadastrar_tarefas.html';
+                } else {
+                    document.getElementById('message').innerText = 'Invalid username or password';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('message').innerText = 'An error occurred';
+            }
+        });
+    </script>
+</body>
+</html>

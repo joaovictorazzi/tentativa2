@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "210b",
+      "username": "usuario",
+      "password": "senha123"
+    },
+    {
+      "id": "98cb",
+      "username": "gustavopenis",
+      "password": "senha123"
+    },
+    {
+      "id": "f852",
+      "username": "joaovic",
+      "password": "senha123"
+    },
+    {
+      "id": "9149",
+      "username": "usuario3",
+      "password": "senha123"
+    },
+    {
+      "id": "6154",
+      "username": "usuario5",
+      "password": "senha123"
+    },
+    {
+      "id": "be2d",
+      "username": "usuario@gmail.com",
+      "password": "senha123"
+    },
+    {
+      "id": "7397",
+      "username": "usuario2@gmail.com",
+      "password": "senha123"
+    },
+    {
+      "id": "29e6",
+      "username": "usuario6@gmail.com",
+      "password": "senha123"
+    },
+    {
+      "id": "7663",
+      "username": "usuario7@gmail.com",
+      "password": "senha123"
+    }
+  ]
+}

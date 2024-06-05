@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: #22007C;
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+#trespontos{
+    width: 100px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#logo {
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#engrenagem {
+    width: 100px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+main {
+    background-color: #ECECEC;
+    min-width: 320px;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    
+    font-size: 4vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+#cadastro {padding-bottom: 50px;
+text-align: center;}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+      
+}
+
+img {
+    width: 100%;
+    padding: 0;
+    
+}
+
+h1 {
+    font-family: poppins;
+    text-align: center;
+}
+
+main > p {
+    font-family: poppins;
+    margin: 30px;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #22007C;
+    padding: 10px;
+}
+
+#dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 30px;
+}
+
+#trespontos:hover #dropdown-menu {
+    display: block;
+}
