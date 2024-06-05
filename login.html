@@ -41,7 +41,7 @@
             const password = document.getElementById('senha_login').value;
 
             try {
-                const response = await fetch('http://localhost:3000/users');
+                const response = await fetch('https://joaovictorazzi.github.io/tentativa2/db.json');
                 const users = await response.json();
 
                 const user = users.find(user => user.username === username && user.password === password);
